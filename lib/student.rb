@@ -31,7 +31,7 @@ class Student
     SQL
     
     DB[:conn].execute(sql, self.name, self.grade)
-    DB[:conn].execute("SELECT last_insert_rowid() FROM students").flatten[0]
+    DB[:conn].execute("SELECT last_insert_rowid() FROM students")
   end 
   
   def create
