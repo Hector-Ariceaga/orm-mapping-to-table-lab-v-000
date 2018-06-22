@@ -3,7 +3,7 @@ class Student
   attr_reader :id 
   
   def self.create_table (id: null, name:, grade)
-    sql = <-- 
+    sql = <<- 
   end 
   
   def self.drop_table
