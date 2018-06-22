@@ -10,7 +10,7 @@ class Student
         grade INTEGER
         );
         SQL
-        
+        DB
   end 
   
   def self.drop_table
