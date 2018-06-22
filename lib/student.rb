@@ -2,9 +2,9 @@ class Student
   attr_accessor :name, :grade
   attr_reader :id 
   
-  def 
+  def initialize
   
-  def self.create_table (name, grade, id = null)
+  def self.create_table
     sql = <<-SQL 
       CREATE TABLE IF NOT EXISTS students (
         id INTEGER PRIMARY KEY,
