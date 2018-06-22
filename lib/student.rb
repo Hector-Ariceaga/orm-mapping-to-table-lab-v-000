@@ -4,7 +4,7 @@ class Student
   
   def self.create_table (id: null, name:, grade)
     sql = <<-SQL 
-      CREATE TABLE IF NOT EXISTS 
+      CREATE TABLE IF NOT EXISTS students
   end 
   
   def self.drop_table
