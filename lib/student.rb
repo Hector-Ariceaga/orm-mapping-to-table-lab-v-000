@@ -31,7 +31,6 @@ class Student
     SQL
     
     DB[:conn].excecute(sql, self.name, self.grade)
-    
   end 
   
   def create
