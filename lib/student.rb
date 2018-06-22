@@ -15,7 +15,7 @@ class Student
         name TEXT,
         grade TEXT
         );
-        SQL
+      SQL
     
     DB[:conn].execute(sql)
   end 
@@ -28,7 +28,7 @@ class Student
     sql = <<-SQL
       INSERT INTO students (name, grade)
       VALUES (?,?)
-      SQL
+    SQL
     
   end 
   
