@@ -2,6 +2,8 @@ class Student
   attr_accessor :name, :grade
   attr_reader :id 
   
+  def 
+  
   def self.create_table (name, grade, id = null)
     sql = <<-SQL 
       CREATE TABLE IF NOT EXISTS students (
