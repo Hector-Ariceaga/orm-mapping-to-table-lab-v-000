@@ -36,7 +36,7 @@ class Student
   end 
   
   def create
-    
+    student = Student.new
   end 
 
   # Remember, you can access your database connection anywhere in this class
