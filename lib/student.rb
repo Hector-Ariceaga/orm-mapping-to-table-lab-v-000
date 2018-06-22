@@ -2,7 +2,7 @@ class Student
   attr_accessor :name, :grade
   attr_reader :id 
   
-  def self.create_table (id: null, name:, grade)
+  def self.create_table (id: null, name:, grade:)
     sql = <<-SQL 
       CREATE TABLE IF NOT EXISTS students (
         id INTEGER PRIMARY KEY,
@@ -10,7 +10,8 @@ class Student
         grade INTEGER
         );
         SQL
-        DB[:conn].execute(sql)
+    
+    DB[:conn].execute(sql)
   end 
   
   def self.drop_table
